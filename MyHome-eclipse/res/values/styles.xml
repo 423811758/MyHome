@@ -1,0 +1,28 @@
+<resources>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="@android:style/Theme.Light.NoTitleBar"></style>
+    <!-- 自定义Dialog样式 -->
+    <style name="myDialogTheme" parent="android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- 透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 背景 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 模糊 -->
+    </style>
+    <!-- 弹出框进度条样式 -->
+    <style name="progressBarStyle" parent="@android:style/Widget.ProgressBar.Large">
+        <item name="android:indeterminateDrawable">@anim/popwin_progressbar_anim_list</item>
+        <item name="android:layout_width">73.0dp</item>
+        <item name="android:layout_height">73.0dp</item>
+    </style>
+
+</resources>
