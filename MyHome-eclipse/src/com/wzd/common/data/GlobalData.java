@@ -14,7 +14,7 @@ public class GlobalData extends CommonGlobalData {
 	public static String USER_ROLE = "";
 	public static final String CHECKSUM_KEY = "DB1ABBCFC2FEAE8CA174C13A063BFD41";
 	/** 是否调试模式 */
-	public static final boolean isDebug = false;
+	public static final boolean isDebug = true;
 	/** 获取设备号 */
 	public static String IMEI_NUM = "";
 	/** 每次加载的数量 */
