@@ -8,6 +8,7 @@ import android.content.pm.PackageManager;
 
 import com.hyphenate.chat.EMClient;
 import com.hyphenate.chat.EMOptions;
+import com.pgyersdk.crash.PgyCrashManager;
 import com.wzd.myhome.setting.AccountSetting;
 import com.wzd.myhome.setting.SystemSetting;
 import com.zzy.app.util.Log4JUtil;
@@ -29,6 +30,7 @@ public class CrashApplication extends CommonApplication {
 	}
 
 	private void initAppData() {
+		PgyCrashManager.register(this);
 		initIM();
 		SystemSetting.getInstance();
 		// 初始化全局context
